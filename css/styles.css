@@ -1,0 +1,82 @@
+/*
+Colors used:
+Background Color (Beige): #FFF6ED;
+Primary Color (Lavender): #E8E1FD;
+Secondary Color (Dark Green): #194027;
+Accent Color (Lime Green): #EFF483;
+Accent Color 2 (Orange): #ED6B2D;
+Active Button Color (Medium Green): #30804d;
+*/
+  body {
+    background-color: #FFF6ED;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px; /* Sets the font size to 16px */
+    font-weight: 300; /* Sets the font weight to 300 */
+    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+    color: #4a4a4a;
+  }
+  
+  h1, h2, h3, h4 {
+    line-height: 1.4;
+  }
+  h1 {
+    font-size: 2.75em;
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+  }
+  
+  h3 {
+    font-size: 1.75em;
+    font-weight: 400;
+  }
+  h4 {
+    font-size: 1.35em;
+    font-weight: 400;
+  }
+  img {
+    width: 100%;
+  }
+  a {
+    color: #194027;
+    text-decoration: none; /* No underlining */
+  }
+  a:hover 
+  a:focus {
+    color: #30804d;
+    text-decoration: underline; /* Underlining when hovering over a link */
+  }
+  a:visited { /* visited link */
+    color: #ED6B2D;
+  }
+  .button {
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: #194027;
+    color: #ffffff; /* needed to override the default link color */
+    font-weight: 400;
+    padding: 20px;
+    border-radius: 8px;
+    transition: 0.2s opacity;
+  }
+  .button:hover 
+  .button:focus{
+    background-color:#30804d;
+    text-decoration: none;
+  }
+  .button:visited {
+    color: #ffffff;
+  }
+  .button.contact {
+    background-color: transparent;
+    color: #194027;
+    padding: 20px;
+    border: 2px solid #194027;
+    border-radius: 8px;
+  }
+  .button.contact:hover {
+    color: #30804d;
+    border: 2px solid #30804d;
+  }
