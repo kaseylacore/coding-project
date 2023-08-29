@@ -61,7 +61,7 @@ Active Button Color (Medium Green): #30804d;
     border-radius: 8px;
     transition: 0.2s opacity;
   }
-  .button:hover 
+  .button:hover, 
   .button:focus{
     background-color:#30804d;
     text-decoration: none;
