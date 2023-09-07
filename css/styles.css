@@ -7,8 +7,10 @@ Accent Color (Lime Green): #EFF483;
 Accent Color 2 (Orange): #ED6B2D;
 Active Button Color (Medium Green): #30804d;
 */
+* {
+  box-sizing: border-box;
+}
   body {
-    background-color: #FFF6ED;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px; /* Sets the font size to 16px */
     font-weight: 300; /* Sets the font weight to 300 */
@@ -49,11 +51,8 @@ Active Button Color (Medium Green): #30804d;
     color: #30804d;
     text-decoration: underline; /* Underlining when hovering over a link */
   }
-  a:visited { /* visited link */
-    color: #ED6B2D;
-  }
   .button {
-    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    display: inline-block; /* since the a tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
     background-color: #194027;
     color: #ffffff; /* needed to override the default link color */
     font-weight: 400;
@@ -80,3 +79,62 @@ Active Button Color (Medium Green): #30804d;
     color: #30804d;
     border: 2px solid #30804d;
   }
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+#work .row {
+  padding-bottom: 25px; border-bottom: 1px solid #194027;/* 25px top and bottom, 0 left and right */
+}
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+.logo {
+  max-width: 250px;
+}
+header {
+  background-color: #FFF6ED;
+  text-align: center;
+  padding: 10px 0; 
+  position:fixed;
+  width: 100%;
+	border: solid #BDBDBD 0; 
+	box-shadow: 0 5px 14px rgba(0, 0, 0, 0.1)  ; 
+	-webkit-box-shadow: 0 5px 14px rgba(0, 0, 0, 0.1)  ; 
+	-moz-box-shadow: 0 5px 14px rgba(0, 0, 0, 0.1)  ; 
+}
+#nav{
+  display: inline-block;
+  width: 100%;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+nav > ul > li > a:hover {
+  color: #ED6B2D
+}
+#hero {
+  background-color: #FFF6ED;
+  padding: 20px 0;
+  display:inline-block;
+  width: 100%;
+}
+main {
+  padding-top: 133px;
+}
+.contacticons ul {
+  list-style-type: none;
+  padding: 0;
+}
+.contacticons li{
+  display:inline-block;}
