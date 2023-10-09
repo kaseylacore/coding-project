@@ -11,10 +11,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://kit.fontawesome.com/09083a5ec8.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div class="container">
+            <div class="navtoggle" id="myNavtoggle"></div>
             <picture class="logo">
             <source media="(max-width:500px)" srcset="files/logo.svg">
             <img src="files/logo.svg" alt="Kasey Lacore Logo" class="logo">
@@ -24,6 +28,7 @@
                     <li><a href="index.html">Work</a></li> 
                     <li><a href="about.html">About</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
                 </ul>
               </nav>
         </div></header>
