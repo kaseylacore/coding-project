@@ -97,7 +97,6 @@ Active Button Color (Medium Green): #30804d;
 }
 .logo {
   max-width: 150px;
-  min-width: 641px
 }
 header {
   background-color: #FFF6ED;
@@ -137,19 +136,12 @@ main {
   padding: 0;
 }
 .contacticons li{
-  display:inline-block;}
-
-  .navtoggle li:not(:last-child) {
+  display:inline-block;
+}
+.navtoggle li:not(:last-child) {
     display: none;
   }
-  .navtoggle li:last-child {
-    display: none;
-  }
-  .logo
-  {
-    max-width: 150px;
-  }
-  .navtoggle, .navtoggle.responsive {
+.navtoggle, .navtoggle.responsive {
     position: relative;
   }
   .navtoggle li .icon {
@@ -157,10 +149,29 @@ main {
     right: 0;
     top: 2px;
     font-size: 20px;
+    padding-right: 0;
   }
-  
+.logo{
+  padding-top: 4px;
+}
+.navtoggle.responsive li  {
+  display: block;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #ED6B2D;
+
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
   /* ==============================
-Medium devices (640px and larger)
+Medium devices (641px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
   header{
@@ -174,7 +185,7 @@ Medium devices (640px and larger)
   .logo
   {
     margin-top: 8px;
-    min-width: 640px;
+    min-width: 400px;
   }
   body{
     font-size: 18px;
@@ -199,19 +210,17 @@ Medium devices (640px and larger)
     margin-left: auto;
     margin-right: auto;
   }
+  nav > ul {
+    margin: 1em 0;
+  }
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  .navtoggle li:last-child {
+    display: none;
+  }
 }
-nav > ul {
-  margin: 1em 0;
-}
-nav > ul > li {
-  display: inline-block;
-}
-.navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-.navtoggle li:last-child {
-  display: none;
-}
+
 
 /* ==============================
 Large devices (1024px or larger)
